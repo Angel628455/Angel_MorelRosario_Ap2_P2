@@ -2,8 +2,8 @@ package edu.ucne.angel_morel_ap2_p2.data.remote.remotedatasource
 
 import edu.ucne.angel_morel_ap2_p2.domain.model.JugadoresCharacter
 
-data class CharacterResponseDto(
-    val items: List<CharacterDto>
+data class JugadoresResponseDto(
+    val items: List<JugadoresResponseDto>
 )
 
 data class CharacterDto(
