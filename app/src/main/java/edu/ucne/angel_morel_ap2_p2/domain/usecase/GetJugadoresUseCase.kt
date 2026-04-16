@@ -1,16 +1,13 @@
 package edu.ucne.angel_morel_ap2_p2.domain.usecase
 
 import edu.ucne.angel_morel_ap2_p2.domain.repository.JugadoresRepository
+import javax.inject.Inject
 
-class GetCharactersUseCase @Inject constructor(
+class GetJugadoresUseCase @Inject constructor(
     private val repository: JugadoresRepository
 ) {
-    operator fun invoke(
-        page: Int = 1,
-        limit: Int = 10,
-        name: String? = null,
-        gender: String? = null,
-        race: String? = null
-    ) = repository.getJugadores(page, limit, name, gender, race)
+    suspend operator fun invoke(
+        nombres: String? = null,
+        email: String? = null
+    ) = repository.getJugadores(nombres, email)
 }
-
