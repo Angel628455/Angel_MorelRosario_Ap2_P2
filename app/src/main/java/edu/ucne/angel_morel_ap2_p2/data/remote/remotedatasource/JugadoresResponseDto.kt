@@ -1,6 +1,6 @@
 package edu.ucne.angel_morel_ap2_p2.data.remote.remotedatasource
 
-import edu.ucne.angel_morel_ap2_p2.domain.model.JugadoresCharacter
+//import edu.ucne.angel_morel_ap2_p2.domain.model.JugadoresCharacter
 
 data class JugadoresResponseDto(
     val items: List<JugadoresResponseDto>
@@ -16,7 +16,7 @@ data class CharacterDto(
     val image: String,
     val maxKi: String,
 ) {
-    fun toDomain() = JugadoresCharacter(
-        id, name, ki, race, gender, description, image, maxKi,
-    )
+//    fun toDomain() = JugadoresCharacter(
+//        id, name, ki, race, gender, description, image, maxKi,
+//    )
 }
