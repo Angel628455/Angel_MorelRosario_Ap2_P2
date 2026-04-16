@@ -10,19 +10,19 @@ plugins {
 android {
     namespace = "edu.ucne.angel_morel_ap2_p2"
     compileSdk {
-        android {
-            namespace = "edu.ucne.angel_morel_ap2_p2"
-
-            compileSdk = 36
-
-            defaultConfig {
-                applicationId = "edu.ucne.angel_morel_ap2_p2"
-                minSdk = 24
-                targetSdk = 36
-                versionCode = 1
-                versionName = "1.0"
-            }
-        }
+//        android {
+//            namespace = "edu.ucne.angel_morel_ap2_p2"
+//
+//            compileSdk = 36
+//
+//            defaultConfig {
+//                applicationId = "edu.ucne.angel_morel_ap2_p2"
+//                minSdk = 24
+//                targetSdk = 36
+//                versionCode = 1
+//                versionName = "1.0"
+//            }
+//        }
     }
 
     defaultConfig {
