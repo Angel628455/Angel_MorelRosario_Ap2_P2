@@ -28,6 +28,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.hilt.navigation.compose.hiltViewModel
 //import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
@@ -36,15 +37,15 @@ import edu.ucne.angel_morel_ap2_p2.domain.model.Jugadores
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun ListJugadorScreen(
- //   viewModel: ListJugadoresViewModel = hiltViewModel(),
+   viewModel: ListJugadoresViewModel = hiltViewModel(),
     onJugadorClick: (Int) -> Unit
 ) {
-//    val state by viewModel.state.collectAsStateWithLifecycle()
-//    ListJugadorBodyScreen(
-//        state = state,
-//        onEvent = viewModel::onEvent,
-//        onJugadorClick = onJugadorClick
-//    )
+    val state by viewModel.state.collectAsStateWithLifecycle()
+    ListJugadorBodyScreen(
+        state = state,
+        onEvent = viewModel::onEvent,
+        onJugadorClick = onJugadorClick
+    )
 }
 
 @OptIn(ExperimentalMaterial3Api::class)
