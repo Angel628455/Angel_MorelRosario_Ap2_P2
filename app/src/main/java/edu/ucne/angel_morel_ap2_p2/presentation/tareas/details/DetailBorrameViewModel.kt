@@ -22,13 +22,16 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.hilt.navigation.compose.hiltViewModel
 //import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import androidx.lifecycle.viewmodel.compose.viewModel
 import edu.ucne.angel_morel_ap2_p2.domain.model.Jugadores
 
+@JvmOverloads
 @Composable
 fun DetailJugadorScreen(
-//  viewModel: DetailJugadoresViewModel = hiltViewModel(),
+  //viewModel: DetailJugadoresViewModel = hiltViewModel(),
     onBack: () -> Unit
 ) {
 //    val state by viewModel.state.collectAsStateWithLifecycle()
